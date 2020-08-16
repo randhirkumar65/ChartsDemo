@@ -1,2 +1,2 @@
 # ChartsDemo
-This Project helps dev to create or render Charts (Line, Pie, Bar) using Charts Library with some cool animations.
+This Project will help dev to create or render Charts (Line, Pie, Bar) using Charts Library with some cool animations.
