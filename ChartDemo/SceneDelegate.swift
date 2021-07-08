@@ -47,7 +47,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
+    func windowScene(_ windowScene: UIWindowScene, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        switch shortcutItem.type {
+        case "com.graphDemo.barChart":
+            // Go To Bar chart screen
+            guard let vc = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "BarChartViewController") as? BarChartViewController else { return }
+            if let homeVC = window?.rootViewController as? UINavigationController {
+                homeVC.pushViewController(vc, animated: true)
+            }
+        default: break
+        }
+    }
 
 }
 
