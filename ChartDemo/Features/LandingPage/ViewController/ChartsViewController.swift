@@ -21,7 +21,7 @@ class ChartsViewController: UIViewController {
     }
     
     private func setDataSource() {
-        viewModel = ChartsViewModel(data: [.init(chart: .barChart), .init(chart: .lineChart), .init(chart: .pieChart)])
+        viewModel = ChartsViewModel(data: [.init(chart: .barChart), .init(chart: .lineChart), .init(chart: .pieChart), .init(chart: .bubbbleChart)])
     }
     
     private func setupTableView() {
@@ -54,8 +54,10 @@ extension ChartsViewController: UITableViewDelegate, UITableViewDataSource {
             performSegue(withIdentifier: kBarSequeId, sender: nil)
         case 1:
             performSegue(withIdentifier: kLineSequeId, sender: nil)
-        default:
+        case 2:
             performSegue(withIdentifier: kPieSequeId, sender: nil)
+        default:
+            performSegue(withIdentifier: kBubbleSequeId, sender: nil)
         }
     }
 }

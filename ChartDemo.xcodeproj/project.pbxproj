@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DACE4D3290042930096FBB6 /* BubbleChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DACE4D2290042930096FBB6 /* BubbleChartViewController.swift */; };
 		D15D216E24E9A1B700533AD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D216D24E9A1B700533AD3 /* AppDelegate.swift */; };
 		D15D217024E9A1B700533AD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D216F24E9A1B700533AD3 /* SceneDelegate.swift */; };
 		D15D217524E9A1B700533AD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15D217324E9A1B700533AD3 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DACE4D2290042930096FBB6 /* BubbleChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleChartViewController.swift; sourceTree = "<group>"; };
 		422CA6D918D38237421C9A5B /* Pods-ChartDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartDemo.release.xcconfig"; path = "Target Support Files/Pods-ChartDemo/Pods-ChartDemo.release.xcconfig"; sourceTree = "<group>"; };
 		45A9461C375F787D8A4E00DB /* Pods_ChartDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15D216A24E9A1B700533AD3 /* ChartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +74,22 @@
 				45A9461C375F787D8A4E00DB /* Pods_ChartDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2DACE4D0290041FD0096FBB6 /* BubbleChart */ = {
+			isa = PBXGroup;
+			children = (
+				2DACE4D1290042800096FBB6 /* ViewController */,
+			);
+			path = BubbleChart;
+			sourceTree = "<group>";
+		};
+		2DACE4D1290042800096FBB6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2DACE4D2290042930096FBB6 /* BubbleChartViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		CE94BC51F9E4D1D63CCFB01E /* Pods */ = {
@@ -120,6 +138,7 @@
 		D15D218124E9A1CC00533AD3 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				2DACE4D0290041FD0096FBB6 /* BubbleChart */,
 				D15D219824E9A2A900533AD3 /* LandingPage */,
 				D15D218224E9A1D600533AD3 /* BarChart */,
 				D15D218424E9A1E500533AD3 /* LineChart */,
@@ -405,6 +424,7 @@
 				D15D219124E9A26600533AD3 /* LineChartViewController.swift in Sources */,
 				D15D21A024E9A2EF00533AD3 /* ChartsTableViewCell.swift in Sources */,
 				D15D21AF24E9CE7100533AD3 /* AnimationCollectionViewCell.swift in Sources */,
+				2DACE4D3290042930096FBB6 /* BubbleChartViewController.swift in Sources */,
 				D15D217024E9A1B700533AD3 /* SceneDelegate.swift in Sources */,
 				D15D218F24E9A25300533AD3 /* BarChartViewController.swift in Sources */,
 				D15D21AB24E9CB3600533AD3 /* AnimationOptionsCollectionViewCell.swift in Sources */,
@@ -555,6 +575,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ChartDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -573,6 +594,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ChartDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
