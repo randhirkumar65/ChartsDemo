@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J6g-oR-UGl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J6g-oR-UGl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -200,6 +200,7 @@
                         <segue destination="XVq-Ho-6FY" kind="show" identifier="sequeToLineChart" id="vW0-si-hmi"/>
                         <segue destination="NKo-b8-EjH" kind="show" identifier="sequeToPieChart" id="BAw-6x-9f9"/>
                         <segue destination="KMB-re-u9p" kind="show" identifier="sequeToBubbleChart" id="zIo-yu-b4I"/>
+                        <segue destination="PSd-qX-I14" kind="show" identifier="sequeToCandleStickChart" id="ddW-s6-hVU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -283,7 +284,68 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JSW-Yg-ggm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-828" y="414"/>
+            <point key="canvasLocation" x="-1499" y="755"/>
+        </scene>
+        <!--Candle Stick Chart View Controller-->
+        <scene sceneID="aRI-fd-fB6">
+            <objects>
+                <viewController storyboardIdentifier="CandleStickChartViewController" id="PSd-qX-I14" customClass="CandleStickChartViewController" customModule="ChartDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="acP-nI-GY5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Tji-o7-M4Y">
+                                <rect key="frame" x="0.0" y="110" width="414" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ZTE-M5-5uH"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="linear"/>
+                                    <segment title="EaseIn"/>
+                                    <segment title="EaseOut"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentAction:" destination="PSd-qX-I14" eventType="valueChanged" id="Bqn-Di-LtM"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Animation Types" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POi-1Y-jBI">
+                                <rect key="frame" x="10" y="88" width="394" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="ymU-AZ-6Je"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rta-C3-nwy" customClass="CandleStickChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="145" width="414" height="717"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="j4M-h5-ooh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rta-C3-nwy" firstAttribute="top" secondItem="Tji-o7-M4Y" secondAttribute="bottom" id="0xs-0e-H43"/>
+                            <constraint firstItem="Rta-C3-nwy" firstAttribute="leading" secondItem="j4M-h5-ooh" secondAttribute="leading" id="2QA-dQ-mqA"/>
+                            <constraint firstItem="j4M-h5-ooh" firstAttribute="bottom" secondItem="Rta-C3-nwy" secondAttribute="bottom" id="7wK-TF-doQ"/>
+                            <constraint firstItem="j4M-h5-ooh" firstAttribute="trailing" secondItem="POi-1Y-jBI" secondAttribute="trailing" constant="10" id="BEx-JM-eUe"/>
+                            <constraint firstItem="POi-1Y-jBI" firstAttribute="leading" secondItem="j4M-h5-ooh" secondAttribute="leading" constant="10" id="MSV-Bl-xY6"/>
+                            <constraint firstItem="j4M-h5-ooh" firstAttribute="trailing" secondItem="Rta-C3-nwy" secondAttribute="trailing" id="OPy-OM-Mhb"/>
+                            <constraint firstItem="Tji-o7-M4Y" firstAttribute="leading" secondItem="j4M-h5-ooh" secondAttribute="leading" id="WQ6-Nd-AUL"/>
+                            <constraint firstItem="POi-1Y-jBI" firstAttribute="top" secondItem="j4M-h5-ooh" secondAttribute="top" id="ehU-q9-8Cc"/>
+                            <constraint firstItem="Tji-o7-M4Y" firstAttribute="top" secondItem="POi-1Y-jBI" secondAttribute="bottom" id="leQ-e8-mXn"/>
+                            <constraint firstItem="Tji-o7-M4Y" firstAttribute="trailing" secondItem="j4M-h5-ooh" secondAttribute="trailing" id="tHy-cn-hzL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hyY-QQ-YPr"/>
+                    <connections>
+                        <outlet property="animationSegmentControl" destination="Tji-o7-M4Y" id="I3Y-QH-xxW"/>
+                        <outlet property="candleStickChartView" destination="Rta-C3-nwy" id="DeE-VD-jes"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ebe-FW-eRY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1500" y="1660"/>
         </scene>
     </scenes>
     <resources>

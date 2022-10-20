@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2DACE4D3290042930096FBB6 /* BubbleChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DACE4D2290042930096FBB6 /* BubbleChartViewController.swift */; };
+		CD3E106B2901D7ED0010B2E6 /* CandleStickChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3E106A2901D7ED0010B2E6 /* CandleStickChartViewController.swift */; };
 		D15D216E24E9A1B700533AD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D216D24E9A1B700533AD3 /* AppDelegate.swift */; };
 		D15D217024E9A1B700533AD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D216F24E9A1B700533AD3 /* SceneDelegate.swift */; };
 		D15D217524E9A1B700533AD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15D217324E9A1B700533AD3 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		2DACE4D2290042930096FBB6 /* BubbleChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleChartViewController.swift; sourceTree = "<group>"; };
 		422CA6D918D38237421C9A5B /* Pods-ChartDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartDemo.release.xcconfig"; path = "Target Support Files/Pods-ChartDemo/Pods-ChartDemo.release.xcconfig"; sourceTree = "<group>"; };
 		45A9461C375F787D8A4E00DB /* Pods_ChartDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD3E106A2901D7ED0010B2E6 /* CandleStickChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleStickChartViewController.swift; sourceTree = "<group>"; };
 		D15D216A24E9A1B700533AD3 /* ChartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15D216D24E9A1B700533AD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D15D216F24E9A1B700533AD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,38 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		CD3E10662901D7820010B2E6 /* CandleStickChart */ = {
+			isa = PBXGroup;
+			children = (
+				CD3E10692901D7AB0010B2E6 /* ViewController */,
+				CD3E10682901D7A00010B2E6 /* ViewModel */,
+				CD3E10672901D7970010B2E6 /* Model */,
+			);
+			path = CandleStickChart;
+			sourceTree = "<group>";
+		};
+		CD3E10672901D7970010B2E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD3E10682901D7A00010B2E6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD3E10692901D7AB0010B2E6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD3E106A2901D7ED0010B2E6 /* CandleStickChartViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		CE94BC51F9E4D1D63CCFB01E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +172,7 @@
 		D15D218124E9A1CC00533AD3 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				CD3E10662901D7820010B2E6 /* CandleStickChart */,
 				2DACE4D0290041FD0096FBB6 /* BubbleChart */,
 				D15D219824E9A2A900533AD3 /* LandingPage */,
 				D15D218224E9A1D600533AD3 /* BarChart */,
@@ -422,6 +457,7 @@
 				D15D21A924E9C74C00533AD3 /* LineChartViewModel.swift in Sources */,
 				D15D219324E9A27300533AD3 /* PieChartViewController.swift in Sources */,
 				D15D219124E9A26600533AD3 /* LineChartViewController.swift in Sources */,
+				CD3E106B2901D7ED0010B2E6 /* CandleStickChartViewController.swift in Sources */,
 				D15D21A024E9A2EF00533AD3 /* ChartsTableViewCell.swift in Sources */,
 				D15D21AF24E9CE7100533AD3 /* AnimationCollectionViewCell.swift in Sources */,
 				2DACE4D3290042930096FBB6 /* BubbleChartViewController.swift in Sources */,
