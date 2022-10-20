@@ -14,6 +14,7 @@ enum CellIdentifiersTypes: String {
 let kBarSequeId = "sequeToBarChart"
 let kLineSequeId = "sequeToLineChart"
 let kPieSequeId = "sequeToPieChart"
+let kBubbleSequeId = "sequeToBubbleChart"
 
 enum AnimationOptions: String, CaseIterable {
     case linear
