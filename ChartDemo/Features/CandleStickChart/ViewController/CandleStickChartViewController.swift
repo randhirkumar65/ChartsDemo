@@ -39,7 +39,7 @@ class CandleStickChartViewController: UIViewController {
         hideChartData = true
     }
     
-    func updateChartData()  {
+    private func updateChartData()  {
         if hideChartData {
             hideChartData = false
             candleStickChartView.data = nil
@@ -47,12 +47,12 @@ class CandleStickChartViewController: UIViewController {
         }
     }
     
-    func setCandleChartData() {
+    private func setCandleChartData() {
         candleStickChartView.autoScaleMinMaxEnabled = true
         setCandleDataCount(8, range: 30)
     }
     
-    func setCandleDataCount(_ count: Int, range: UInt32) {
+    private func setCandleDataCount(_ count: Int, range: UInt32) {
         let animationType: ChartEasingOption  = animationSelected == AnimationOptions.linear ? .linear : animationSelected == AnimationOptions.easeInCubic ? .easeInCubic : .easeOutCubic
         
         let yVals1 = (0..<count).map { (i) -> CandleChartDataEntry in
