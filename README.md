@@ -6,3 +6,7 @@ This Project will help dev to create or render Charts (Line, Pie, Bar) using Cha
 ### Bubble Charts
 
 <img src="https://github.com/TeaTalkInternal/github_assets/blob/master/gifs/bubble-chart-demo.gif" height="500em">
+
+### Candlestick Chart
+
+<img src="/gifs/candlestick_chart.gif" height="500em">
