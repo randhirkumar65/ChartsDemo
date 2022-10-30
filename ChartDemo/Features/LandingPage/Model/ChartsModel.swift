@@ -19,4 +19,5 @@ enum ChartType: String {
     case pieChart = "Pie Chart"
     case bubbbleChart = "Bubble Chart"
     case candleStickChart = "Candlestick Chart"
+    case radarChart = "Radar Chart"
 }

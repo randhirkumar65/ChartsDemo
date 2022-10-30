@@ -16,6 +16,7 @@ let kLineSequeId = "sequeToLineChart"
 let kPieSequeId = "sequeToPieChart"
 let kBubbleSequeId = "sequeToBubbleChart"
 let kCandleStickSequeId = "sequeToCandleStickChart"
+let kRadarChartSequeId = "sequeToRadar"
 
 enum AnimationOptions: String, CaseIterable {
     case linear

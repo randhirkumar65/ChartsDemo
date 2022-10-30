@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D602A5B290ECCED002993FC /* RadarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D602A5A290ECCED002993FC /* RadarChartViewController.swift */; };
 		2DACE4D3290042930096FBB6 /* BubbleChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DACE4D2290042930096FBB6 /* BubbleChartViewController.swift */; };
 		CD3E106B2901D7ED0010B2E6 /* CandleStickChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3E106A2901D7ED0010B2E6 /* CandleStickChartViewController.swift */; };
 		D15D216E24E9A1B700533AD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D216D24E9A1B700533AD3 /* AppDelegate.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D602A5A290ECCED002993FC /* RadarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarChartViewController.swift; sourceTree = "<group>"; };
 		2DACE4D2290042930096FBB6 /* BubbleChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleChartViewController.swift; sourceTree = "<group>"; };
 		422CA6D918D38237421C9A5B /* Pods-ChartDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartDemo.release.xcconfig"; path = "Target Support Files/Pods-ChartDemo/Pods-ChartDemo.release.xcconfig"; sourceTree = "<group>"; };
 		45A9461C375F787D8A4E00DB /* Pods_ChartDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,14 @@
 				45A9461C375F787D8A4E00DB /* Pods_ChartDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D602A59290ECCED002993FC /* RadarChart */ = {
+			isa = PBXGroup;
+			children = (
+				2D602A5A290ECCED002993FC /* RadarChartViewController.swift */,
+			);
+			path = RadarChart;
 			sourceTree = "<group>";
 		};
 		2DACE4D0290041FD0096FBB6 /* BubbleChart */ = {
@@ -172,6 +182,7 @@
 		D15D218124E9A1CC00533AD3 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				2D602A59290ECCED002993FC /* RadarChart */,
 				CD3E10662901D7820010B2E6 /* CandleStickChart */,
 				2DACE4D0290041FD0096FBB6 /* BubbleChart */,
 				D15D219824E9A2A900533AD3 /* LandingPage */,
@@ -454,6 +465,7 @@
 				D15D216E24E9A1B700533AD3 /* AppDelegate.swift in Sources */,
 				D15D21A324E9A44200533AD3 /* ChartsViewModel.swift in Sources */,
 				D15D219D24E9A2DA00533AD3 /* ChartsViewController.swift in Sources */,
+				2D602A5B290ECCED002993FC /* RadarChartViewController.swift in Sources */,
 				D15D21A924E9C74C00533AD3 /* LineChartViewModel.swift in Sources */,
 				D15D219324E9A27300533AD3 /* PieChartViewController.swift in Sources */,
 				D15D219124E9A26600533AD3 /* LineChartViewController.swift in Sources */,
