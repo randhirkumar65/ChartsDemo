@@ -10,3 +10,7 @@ This Project will help dev to create or render Charts (Line, Pie, Bar) using Cha
 ### Candlestick Chart
 
 <img src="/gifs/candlestick_chart.gif" height="500em">
+
+### Radar Chart
+
+<img src="/gifs/radar_chart.gif" height="500em">

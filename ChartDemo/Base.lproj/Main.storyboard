@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J6g-oR-UGl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J6g-oR-UGl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rvY-Ch-aKJ">
-                                <rect key="frame" x="0.0" y="110" width="414" height="36"/>
+                                <rect key="frame" x="0.0" y="114" width="414" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Pf3-Db-SHy"/>
                                 </constraints>
@@ -32,7 +32,7 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Animation Types" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfR-o0-pNz">
-                                <rect key="frame" x="10" y="88" width="394" height="22"/>
+                                <rect key="frame" x="10" y="92" width="394" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="1Id-gZ-0aF"/>
                                 </constraints>
@@ -41,7 +41,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s10-sf-LKd" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="145" width="414" height="717"/>
+                                <rect key="frame" x="0.0" y="149" width="414" height="713"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -79,7 +79,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Animation Types" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ag-j9-dIW">
-                                <rect key="frame" x="10" y="88" width="394" height="22"/>
+                                <rect key="frame" x="10" y="92" width="394" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="mKe-Le-qA5"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="xrc-F3-XEf"/>
@@ -89,7 +89,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3P1-7U-6yB">
-                                <rect key="frame" x="0.0" y="110" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="114" width="414" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="K1l-XY-8M1"/>
@@ -107,7 +107,7 @@
                                 </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98S-hZ-Br0" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="170" width="414" height="692"/>
+                                <rect key="frame" x="0.0" y="174" width="414" height="688"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -145,7 +145,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4n-f3-Plg" customClass="PieChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -176,7 +176,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xne-BP-Tjt">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="GoH-ur-3U8"/>
@@ -201,6 +201,7 @@
                         <segue destination="NKo-b8-EjH" kind="show" identifier="sequeToPieChart" id="BAw-6x-9f9"/>
                         <segue destination="KMB-re-u9p" kind="show" identifier="sequeToBubbleChart" id="zIo-yu-b4I"/>
                         <segue destination="PSd-qX-I14" kind="show" identifier="sequeToCandleStickChart" id="ddW-s6-hVU"/>
+                        <segue destination="62I-4c-9jG" kind="show" identifier="sequeToRadar" id="igz-et-JWG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -213,7 +214,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J6g-oR-UGl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mae-jF-Bgn">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -234,7 +235,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iiO-GA-mNk">
-                                <rect key="frame" x="0.0" y="110" width="414" height="36"/>
+                                <rect key="frame" x="0.0" y="114" width="414" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="8ou-mn-iDA"/>
                                 </constraints>
@@ -248,7 +249,7 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Animation Types" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Us-vn-1ox">
-                                <rect key="frame" x="10" y="88" width="394" height="22"/>
+                                <rect key="frame" x="10" y="92" width="394" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="aMa-aY-HsJ"/>
                                 </constraints>
@@ -257,7 +258,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M00-yK-mgT" customClass="BubbleChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="145" width="414" height="717"/>
+                                <rect key="frame" x="0.0" y="149" width="414" height="713"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -295,7 +296,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Tji-o7-M4Y">
-                                <rect key="frame" x="0.0" y="110" width="414" height="36"/>
+                                <rect key="frame" x="0.0" y="114" width="414" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="ZTE-M5-5uH"/>
                                 </constraints>
@@ -309,7 +310,7 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Animation Types" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POi-1Y-jBI">
-                                <rect key="frame" x="10" y="88" width="394" height="22"/>
+                                <rect key="frame" x="10" y="92" width="394" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="ymU-AZ-6Je"/>
                                 </constraints>
@@ -318,7 +319,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rta-C3-nwy" customClass="CandleStickChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="145" width="414" height="717"/>
+                                <rect key="frame" x="0.0" y="149" width="414" height="713"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -346,6 +347,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ebe-FW-eRY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1500" y="1660"/>
+        </scene>
+        <!--Radar Chart View Controller-->
+        <scene sceneID="RGC-Qv-dGa">
+            <objects>
+                <viewController storyboardIdentifier="RadarChartViewController" id="62I-4c-9jG" customClass="RadarChartViewController" customModule="ChartDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Fu-Zr-ybZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ah7-EQ-fbI">
+                                <rect key="frame" x="0.0" y="114" width="414" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="wBu-0M-tzs"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="linear"/>
+                                    <segment title="EaseIn"/>
+                                    <segment title="EaseOut"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentAction:" destination="62I-4c-9jG" eventType="valueChanged" id="Yst-4U-RRc"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Animation Types" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obd-Dx-Fg3">
+                                <rect key="frame" x="10" y="92" width="394" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="YoI-7f-ay0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RyB-QN-cvd" customClass="RadarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="149" width="414" height="713"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NQx-WH-beJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RyB-QN-cvd" firstAttribute="top" secondItem="ah7-EQ-fbI" secondAttribute="bottom" id="8L8-h3-R0g"/>
+                            <constraint firstItem="NQx-WH-beJ" firstAttribute="trailing" secondItem="RyB-QN-cvd" secondAttribute="trailing" id="E14-Qz-rX7"/>
+                            <constraint firstItem="ah7-EQ-fbI" firstAttribute="leading" secondItem="NQx-WH-beJ" secondAttribute="leading" id="KSY-wA-VGs"/>
+                            <constraint firstItem="obd-Dx-Fg3" firstAttribute="top" secondItem="NQx-WH-beJ" secondAttribute="top" id="ZI5-6m-LHd"/>
+                            <constraint firstItem="ah7-EQ-fbI" firstAttribute="trailing" secondItem="NQx-WH-beJ" secondAttribute="trailing" id="Zhe-Nt-crx"/>
+                            <constraint firstItem="ah7-EQ-fbI" firstAttribute="top" secondItem="obd-Dx-Fg3" secondAttribute="bottom" id="aKm-FB-n2P"/>
+                            <constraint firstItem="NQx-WH-beJ" firstAttribute="trailing" secondItem="obd-Dx-Fg3" secondAttribute="trailing" constant="10" id="bus-Fg-S4P"/>
+                            <constraint firstItem="NQx-WH-beJ" firstAttribute="bottom" secondItem="RyB-QN-cvd" secondAttribute="bottom" id="jfx-hY-Ioc"/>
+                            <constraint firstItem="obd-Dx-Fg3" firstAttribute="leading" secondItem="NQx-WH-beJ" secondAttribute="leading" constant="10" id="pmn-Dd-HBt"/>
+                            <constraint firstItem="RyB-QN-cvd" firstAttribute="leading" secondItem="NQx-WH-beJ" secondAttribute="leading" id="z8Y-lZ-ej9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BHO-gW-wMj"/>
+                    <connections>
+                        <outlet property="animationSegmentControl" destination="ah7-EQ-fbI" id="V7R-cY-ajD"/>
+                        <outlet property="radarStickChartView" destination="RyB-QN-cvd" id="g6M-db-idi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BAQ-4B-7rb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-275" y="1659"/>
         </scene>
     </scenes>
     <resources>
